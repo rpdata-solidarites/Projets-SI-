@@ -185,9 +185,6 @@
                     <tr>\
                         <td colspan="2"><strong>Nom </strong>' + (feature.properties['Nom'] !== null ? autolinker.link(String(feature.properties['Nom']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2"><strong>Bnf </strong>' + (feature.properties['Benef'] !== null ? autolinker.link(String(feature.properties['Benef']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
