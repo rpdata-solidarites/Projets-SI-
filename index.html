@@ -240,16 +240,16 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>Nom</strong><br />' + (feature.properties['Nom'] !== null ? autolinker.link(String(feature.properties['Nom']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Nom </strong>' + (feature.properties['Nom'] !== null ? autolinker.link(String(feature.properties['Nom']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Bnf</strong>' + (feature.properties['Benef'] !== null ? autolinker.link(String(feature.properties['Benef']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Bnf </strong>' + (feature.properties['Benef'] !== null ? autolinker.link(String(feature.properties['Benef']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Projets'] !== null ? autolinker.link(String(feature.properties['Projets']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Projets </strong>' + (feature.properties['Projets'] !== null ? autolinker.link(String(feature.properties['Projets']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Secteur'] !== null ? autolinker.link(String(feature.properties['Secteur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Secteurs </strong>' + (feature.properties['Secteur'] !== null ? autolinker.link(String(feature.properties['Secteur']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
