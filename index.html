@@ -122,7 +122,7 @@
             return this._div;
         };
         title.update = function () {
-            this._div.innerHTML = '<h2>Ensemble de Projets réalisés par Solidarités International</h2>';
+            this._div.innerHTML = '<h2>Projets réalisés par Solidarités International</h2>';
         };
         title.addTo(map);
         var abstract = new L.Control({'position':'bottomleft'});
@@ -137,7 +137,7 @@
             abstract.show = function () {
                 this._div.classList.remove("abstract");
                 this._div.classList.add("abstractUncollapsed");
-                this._div.innerHTML = 'Cartoggraphie dynamique mettant en exergue les projets réalisés par la mission Solidarités International et le nombre de bénéficiaire par commune au Burkina Faso.';
+                this._div.innerHTML = 'Cartographie dynamique mettant en exergue les projets réalisés par la mission Solidarités International et le nombre de bénéficiaires par commune au Burkina Faso.';
         };
         abstract.addTo(map);
         var zoomControl = L.control.zoom({
